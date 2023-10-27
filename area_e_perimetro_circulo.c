@@ -16,16 +16,14 @@ Formula perímetro: 2*pi*r
 
 int main() {
 
-    float raio, area, perimetro, pi = 3.14, potencia;
+    float raio, area, perimetro;
 
     printf("Insira o valor do raio do circulo (em cm): ");
     scanf("%f", &raio);
 
-    potencia = pow(raio, 2); //Potencialização do valor de raio
+    area = M_PI * pow(raio, 2); //Calculo da área
 
-    area = pi*potencia; //Calculo da área
-
-    perimetro = 2*pi*raio; //Calculo do perímetro
+    perimetro = 2*M_PI*raio; //Calculo do perímetro
 
     printf("O valor da area do circulo eh %.2fcm2 \ne o do perimetro eh %.2fcm3", area, perimetro);
 
